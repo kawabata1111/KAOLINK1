@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Arrow Icon -->
+    <symbol id="icon-arrow" viewBox="0 0 24 24">
+      <path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- Bus Icon -->
+    <symbol id="icon-bus" viewBox="0 0 64 64">
+      <rect x="8" y="12" width="48" height="36" rx="4" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <rect x="12" y="18" width="16" height="12" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <rect x="32" y="18" width="16" height="12" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="18" cy="48" r="6" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="46" cy="48" r="6" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <line x1="8" y1="36" x2="56" y2="36" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+
+    <!-- Train Icon -->
+    <symbol id="icon-train" viewBox="0 0 64 64">
+      <rect x="8" y="8" width="48" height="40" rx="6" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <rect x="14" y="14" width="14" height="14" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <rect x="36" y="14" width="14" height="14" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="20" cy="40" r="4" fill="#F07F2C"/>
+      <circle cx="44" cy="40" r="4" fill="#F07F2C"/>
+      <line x1="8" y1="48" x2="20" y2="56" stroke="#F07F2C" stroke-width="2"/>
+      <line x1="56" y1="48" x2="44" y2="56" stroke="#F07F2C" stroke-width="2"/>
+      <line x1="20" y1="56" x2="44" y2="56" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+
+    <!-- Medical/Health Icon -->
+    <symbol id="icon-medical" viewBox="0 0 64 64">
+      <rect x="8" y="8" width="48" height="48" rx="8" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <path d="M32 18v28M18 32h28" stroke="#F07F2C" stroke-width="4" stroke-linecap="round"/>
+    </symbol>
+
+    <!-- Disaster Prevention Icon -->
+    <symbol id="icon-disaster" viewBox="0 0 64 64">
+      <path d="M32 4L4 28h10v28h36V28h10L32 4z" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <rect x="24" y="36" width="16" height="20" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="32" cy="24" r="6" fill="none" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+
+    <!-- WiFi/Signal Icon -->
+    <symbol id="icon-wifi" viewBox="0 0 64 64">
+      <path d="M32 48 Q32 40 40 40 Q48 40 48 48" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <path d="M32 40 Q32 28 44 28 Q56 28 56 40" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <path d="M32 32 Q32 16 48 16 Q64 16 64 32" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="32" cy="52" r="4" fill="#F07F2C"/>
+    </symbol>
+
+    <!-- Smartphone Icon -->
+    <symbol id="icon-smartphone" viewBox="0 0 64 64">
+      <rect x="16" y="4" width="32" height="56" rx="4" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <rect x="20" y="12" width="24" height="36" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="32" cy="54" r="3" fill="none" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+
+    <!-- Cloud/Server Icon -->
+    <symbol id="icon-cloud" viewBox="0 0 64 64">
+      <path d="M48 40c8 0 12-4 12-10s-4-10-10-10c0-8-6-14-14-14-8 0-14 6-14 14-6 0-10 4-10 10s4 10 10 10h26z" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <path d="M24 50v8M32 50v8M40 50v8" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+
+    <!-- Network Icon -->
+    <symbol id="icon-network" viewBox="0 0 64 64">
+      <circle cx="32" cy="16" r="8" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="12" cy="48" r="8" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <circle cx="52" cy="48" r="8" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <line x1="32" y1="24" x2="12" y2="40" stroke="#F07F2C" stroke-width="2"/>
+      <line x1="32" y1="24" x2="52" y2="40" stroke="#F07F2C" stroke-width="2"/>
+      <line x1="20" y1="48" x2="44" y2="48" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+
+    <!-- Infinity Symbol -->
+    <symbol id="icon-infinity" viewBox="0 0 64 32">
+      <path d="M16 16c0 6-4 11-9 11-4 0-7-4-7-9 0-6 4-11 9-11 4 0 7 4 7 9zm0 0c0-6 4-11 9-11 4 0 7 4 7 9 0 6-4 11-9 11-4 0-7-4-7-9z" fill="none" stroke="#F07F2C" stroke-width="2"/>
+      <path d="M48 16c0 6-4 11-9 11-4 0-7-4-7-9 0-6 4-11 9-11 4 0 7 4 7 9zm0 0c0-6 4-11 9-11 4 0 7 4 7 9 0 6-4 11-9 11-4 0-7-4-7-9z" fill="none" stroke="#F07F2C" stroke-width="2"/>
+    </symbol>
+  </defs>
+</svg>

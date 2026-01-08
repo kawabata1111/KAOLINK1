@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社KAO LINK | ライフラインのコスト削減で暮らしをつなぐ</title>
+    <meta name="description" content="株式会社KAO LINKは、電気・ガス・通信のライフラインコスト削減を通じて、お客様の暮らしと未来をつなぐ営業代行企業です。">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <div class="header__logos">
+                <a href="index.html" class="header__logo header__logo--main">
+                    <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                        <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                        <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                    </svg>
+                    <span class="logo-text">KAO LINK</span>
+                </a>
+            </div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">会社案内</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <a href="services.html" class="header__nav-link">事業内容</a>
+                        <ul class="header__dropdown">
+                            <li><a href="services.html#electric">電気料金削減</a></li>
+                            <li><a href="services.html#gas">ガス料金削減</a></li>
+                            <li><a href="services.html#telecom">通信コスト削減</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link">ニュース</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="header__cta btn btn--primary">
+                お問い合わせ<span class="btn__arrow">▶</span>
+            </a>
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="about.html" class="mobile-menu__link">会社案内</a></li>
+                <li><a href="services.html" class="mobile-menu__link">事業内容</a></li>
+                <li><a href="news.html" class="mobile-menu__link">ニュース</a></li>
+                <li><a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- セクション1: ヒーロー -->
+        <section class="hero" id="hero">
+            <div class="hero__bg">
+                <img src="assets/hero-isometric.png" alt="ヒーローイメージ" class="hero__image">
+            </div>
+            <div class="hero__scroll-text">SCROLL</div>
+            <div class="hero__content">
+                <p class="hero__subtitle">Connecting Your Life to the Future</p>
+                <h1 class="hero__title">
+                    <span class="hero__title-line">暮らしをつなぐ</span>
+                    <span class="hero__title-line">コストを削減</span>
+                </h1>
+                <p class="hero__desc">電気・ガス・通信のライフラインコスト削減で、お客様の暮らしと未来をサポートします</p>
+            </div>
+            <div class="hero__decoration-text">CONNECTION</div>
+        </section>
+
+        <!-- セクション2: NEWS -->
+        <section class="news section section--white" id="news">
+            <div class="container">
+                <div class="news__box animate-on-scroll">
+                    <div class="news__header">
+                        <h2 class="news__title">NEWS</h2>
+                        <span class="news__subtitle">お知らせ</span>
+                    </div>
+                    <div class="news__content">
+                        <ul class="news__list">
+                            <li class="news__item">
+                                <time class="news__date" datetime="2025-09-24">2025.09.24</time>
+                                <span class="news__category">お知らせ</span>
+                                <a href="#" class="news__link">株式会社KAO LINKを設立いたしました</a>
+                            </li>
+                            <li class="news__item">
+                                <time class="news__date" datetime="2025-10-01">2025.10.01</time>
+                                <span class="news__category">サービス</span>
+                                <a href="#" class="news__link">ライフラインコスト削減サービスの提供を開始しました</a>
+                            </li>
+                            <li class="news__item">
+                                <time class="news__date" datetime="2025-10-15">2025.10.15</time>
+                                <span class="news__category">お知らせ</span>
+                                <a href="#" class="news__link">ホームページを公開しました</a>
+                            </li>
+                        </ul>
+                        <a href="news.html" class="news__view-all">VIEW ALL<span class="btn__arrow">▶</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション3: 企業理念 -->
+        <section class="philosophy section section--white" id="about">
+            <div class="philosophy__decoration philosophy__decoration--left">
+                <!-- 街並みシルエット左 -->
+            </div>
+            <div class="container">
+                <div class="philosophy__inner animate-on-scroll">
+                    <div class="philosophy__image">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=600&fit=crop" alt="チームワーク - 手を重ねるビジネスチーム" loading="lazy">
+                    </div>
+                    <div class="philosophy__content">
+                        <h2 class="section__title">ライフラインを通して<br>暮らしと未来をつなぐ</h2>
+                        <p class="philosophy__text">
+                            株式会社KAO LINKは、電気・ガス・通信といったライフラインのコスト削減を通じて、お客様の暮らしをより豊かにするお手伝いをいたします。<br><br>
+                            お客様一人ひとりに寄り添い、最適なプランをご提案。毎月の固定費を見直すことで、家計の負担を軽減し、より良い生活を実現します。
+                        </p>
+                        <a href="services.html" class="btn btn--primary">
+                            事業内容<span class="btn__arrow">▶</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="philosophy__decoration philosophy__decoration--right">
+                <!-- 街並みシルエット右 -->
+            </div>
+        </section>
+
+        <!-- セクション4: サービス内容 -->
+        <section class="vision section section--orange" id="vision">
+            <div class="vision__bg-text">SAVING</div>
+            <div class="container">
+                <div class="vision__header animate-on-scroll">
+                    <h2 class="section__title section__title--white">3つのライフラインコスト削減</h2>
+                    <p class="vision__lead">毎月の固定費を見直して、賢く節約しませんか？</p>
+                </div>
+
+                <div class="vision__diagram animate-on-scroll">
+                    <div class="vision__ict-circle">
+                        <div class="vision__ict-item vision__ict-item--i">
+                            <span class="vision__ict-letter">E</span>
+                            <span class="vision__ict-word">Electric</span>
+                        </div>
+                        <div class="vision__ict-item vision__ict-item--c">
+                            <span class="vision__ict-letter">G</span>
+                            <span class="vision__ict-word">Gas</span>
+                        </div>
+                        <div class="vision__ict-item vision__ict-item--t">
+                            <span class="vision__ict-letter">C</span>
+                            <span class="vision__ict-word">Communication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vision__cards animate-on-scroll">
+                    <div class="vision__card">
+                        <div class="vision__card-icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <circle cx="32" cy="32" r="24" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M32 16v8l6 6-6 6v12" stroke="#F07F2C" stroke-width="3" fill="none"/>
+                                <circle cx="32" cy="32" r="4" fill="#F07F2C"/>
+                            </svg>
+                        </div>
+                        <h3 class="vision__card-title">電気料金削減</h3>
+                        <p class="vision__card-text">お客様の使用状況に合わせた最適な電力プランをご提案します</p>
+                        <span class="vision__card-keyword">Electric</span>
+                    </div>
+                    <div class="vision__card">
+                        <div class="vision__card-icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <path d="M32 56c-12 0-20-8-20-20V20h40v16c0 12-8 20-20 20z" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M24 8h16M32 8v12" stroke="#F07F2C" stroke-width="2"/>
+                                <circle cx="32" cy="36" r="6" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M32 30v-4M32 42v4" stroke="#F07F2C" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="vision__card-title">ガス料金削減</h3>
+                        <p class="vision__card-text">ガス会社の切り替えで毎月の光熱費を大幅に削減できます</p>
+                        <span class="vision__card-keyword">Gas</span>
+                    </div>
+                    <div class="vision__card">
+                        <div class="vision__card-icon">
+                            <svg viewBox="0 0 64 64" width="64" height="64">
+                                <rect x="20" y="8" width="24" height="48" rx="4" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <rect x="24" y="14" width="16" height="28" fill="none" stroke="#F07F2C" stroke-width="1"/>
+                                <circle cx="32" cy="50" r="3" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M48 20h8M48 28h12M48 36h8" stroke="#F07F2C" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="vision__card-title">通信コスト削減</h3>
+                        <p class="vision__card-text">スマホ・インターネット回線の見直しでお得に通信費を節約</p>
+                        <span class="vision__card-keyword">Communication</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション5: 会社紹介 -->
+        <section class="company section section--white" id="company">
+            <div class="company__bg">
+                <svg class="company__illustration" viewBox="0 0 1920 800" preserveAspectRatio="xMidYMid slice"></svg>
+            </div>
+            <div class="container">
+                <div class="company__inner animate-on-scroll">
+                    <div class="company__content">
+                        <h2 class="section__title">会社概要</h2>
+                        <div class="company__info">
+                            <table class="company__table">
+                                <tr><th>会社名</th><td>株式会社KAO LINK</td></tr>
+                                <tr><th>代表者</th><td>澤井優輝</td></tr>
+                                <tr><th>設立</th><td>2025年9月24日</td></tr>
+                                <tr><th>資本金</th><td>100万円</td></tr>
+                                <tr><th>従業員数</th><td>12名</td></tr>
+                                <tr><th>事業内容</th><td>電気・ガス・通信の営業代行<br>（ライフラインのコスト削減）</td></tr>
+                                <tr><th>所在地</th><td>〒571-0046<br>大阪府門真市松生町1-16-211</td></tr>
+                                <tr><th>電話番号</th><td>070-9047-1520</td></tr>
+                                <tr><th>メール</th><td>kaolink.ltd@gmail.com</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="company__image">
+                        <img src="assets/company-image.png" alt="KAO LINK チーム" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="company__infinity-symbol">∞</div>
+        </section>
+
+        <!-- セクション6: ご利用の流れ -->
+        <section class="solution section section--orange" id="services">
+            <div class="container">
+                <div class="solution__header animate-on-scroll">
+                    <h2 class="section__title section__title--white">ご利用の流れ</h2>
+                    <p class="solution__lead">簡単4ステップでコスト削減を実現します</p>
+                </div>
+
+                <div class="solution__flow animate-on-scroll">
+                    <div class="solution__step">
+                        <div class="solution__step-number">01</div>
+                        <div class="solution__step-box">
+                            <h3 class="solution__step-title">ヒアリング</h3>
+                            <p class="solution__step-text">現在の料金や<br>使用状況を確認</p>
+                        </div>
+                    </div>
+                    <div class="solution__arrow">
+                        <svg viewBox="0 0 40 20" width="40" height="20">
+                            <path d="M0 10h30M25 5l10 5-10 5" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="solution__step">
+                        <div class="solution__step-number">02</div>
+                        <div class="solution__step-box">
+                            <h3 class="solution__step-title">診断・提案</h3>
+                            <p class="solution__step-text">最適プランを<br>無料でご提案</p>
+                        </div>
+                    </div>
+                    <div class="solution__arrow">
+                        <svg viewBox="0 0 40 20" width="40" height="20">
+                            <path d="M0 10h30M25 5l10 5-10 5" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="solution__step">
+                        <div class="solution__step-number">03</div>
+                        <div class="solution__step-box">
+                            <h3 class="solution__step-title">切り替え</h3>
+                            <p class="solution__step-text">面倒な手続きも<br>お任せください</p>
+                        </div>
+                    </div>
+                    <div class="solution__arrow">
+                        <svg viewBox="0 0 40 20" width="40" height="20">
+                            <path d="M0 10h30M25 5l10 5-10 5" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <div class="solution__step">
+                        <div class="solution__step-number">04</div>
+                        <div class="solution__step-box">
+                            <h3 class="solution__step-title">削減達成</h3>
+                            <p class="solution__step-text">毎月のコストを<br>しっかり削減</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- セクション7: お問い合わせ -->
+        <section class="service section section--white" id="contact">
+            <div class="container">
+                <div class="service__inner animate-on-scroll">
+                    <div class="service__image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&h=600&fit=crop" alt="お問い合わせイメージ" loading="lazy">
+                        <div class="service__vertical-text">CONTACT</div>
+                    </div>
+                    <div class="service__content">
+                        <h2 class="section__title">まずはお気軽に<br>ご相談ください</h2>
+                        <p class="service__text">
+                            電気・ガス・通信のコスト削減について、無料でご相談を承っております。<br><br>
+                            お客様の現在のご利用状況をお聞きし、最適なプランをご提案いたします。切り替えの手続きもすべてサポートいたしますので、お気軽にお問い合わせください。<br><br>
+                            <strong>お電話でのお問い合わせ</strong><br>
+                            <span class="service__phone">070-9047-1520</span><br><br>
+                            <strong>メールでのお問い合わせ</strong><br>
+                            <a href="mailto:kaolink.ltd@gmail.com" class="service__email">kaolink.ltd@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="services.html">事業内容</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+            <div class="footer__main">
+                <div class="footer__company">
+                    <div class="footer__logo">
+                        <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                            <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                            <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                        </svg>
+                        <span class="footer__logo-text">KAO LINK</span>
+                    </div>
+                    <address class="footer__address">
+                        株式会社KAO LINK<br>
+                        〒571-0046 大阪府門真市松生町1-16-211<br>
+                        TEL: 070-9047-1520<br>
+                        Email: kaolink.ltd@gmail.com
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 株式会社KAO LINK All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 4l-8 8h5v8h6v-8h5z" fill="white"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

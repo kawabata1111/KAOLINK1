@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事業内容 | 株式会社KAO LINK</title>
+    <meta name="description" content="株式会社KAO LINKの事業内容をご紹介します。電気料金削減、ガス料金削減、通信コスト削減の3つのサービスでお客様の固定費を削減します。">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <div class="header__logos">
+                <a href="index.html" class="header__logo header__logo--main">
+                    <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                        <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                        <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                    </svg>
+                    <span class="logo-text">KAO LINK</span>
+                </a>
+            </div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">会社案内</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <a href="services.html" class="header__nav-link header__nav-link--active">事業内容</a>
+                        <ul class="header__dropdown">
+                            <li><a href="services.html#electric">電気料金削減</a></li>
+                            <li><a href="services.html#gas">ガス料金削減</a></li>
+                            <li><a href="services.html#telecom">通信コスト削減</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link">ニュース</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="header__cta btn btn--primary">
+                お問い合わせ<span class="btn__arrow">▶</span>
+            </a>
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="about.html" class="mobile-menu__link">会社案内</a></li>
+                <li><a href="services.html" class="mobile-menu__link">事業内容</a></li>
+                <li><a href="news.html" class="mobile-menu__link">ニュース</a></li>
+                <li><a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="page-header__bg">
+                <div class="page-header__grid"></div>
+                <div class="page-header__floating-shapes">
+                    <div class="page-header__shape page-header__shape--1"></div>
+                    <div class="page-header__shape page-header__shape--2"></div>
+                    <div class="page-header__shape page-header__shape--3"></div>
+                    <div class="page-header__shape page-header__shape--4"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="page-header__content">
+                    <p class="page-header__subtitle">Services</p>
+                    <h1 class="page-header__title">事業内容</h1>
+                    <div class="page-header__line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb__list">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>事業内容</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- サービス概要 -->
+        <section class="section section--white section--decorated">
+            <div class="container">
+                <div class="content-block animate-on-scroll">
+                    <div class="content-block__header content-block__header--center">
+                        <span class="content-block__label">Our Services</span>
+                        <h2 class="section__title">3つのコスト削減サービス</h2>
+                        <p class="content-block__lead">
+                            毎月の固定費を見直して、賢く節約しませんか？<br>
+                            私たちは、電気・ガス・通信の3つのライフラインコスト削減をサポートします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 電気料金削減 -->
+        <section class="section section--gray" id="electric">
+            <div class="container">
+                <div class="service-detail animate-on-scroll">
+                    <div class="service-detail__header">
+                        <div class="service-detail__icon">
+                            <svg viewBox="0 0 64 64" width="80" height="80">
+                                <circle cx="32" cy="32" r="28" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M32 12v10l8 8-8 8v14" stroke="#F07F2C" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="service-detail__title-area">
+                            <span class="service-detail__number">01</span>
+                            <h2 class="service-detail__title">電気料金削減</h2>
+                            <p class="service-detail__subtitle">Electric Cost Reduction</p>
+                        </div>
+                    </div>
+                    <div class="service-detail__content">
+                        <div class="service-detail__image">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop" alt="電気料金削減イメージ" loading="lazy">
+                        </div>
+                        <div class="service-detail__info">
+                            <h3 class="service-detail__heading">お客様に最適な電力プランをご提案</h3>
+                            <p class="service-detail__text">
+                                2016年の電力自由化以降、多くの新電力会社が参入し、さまざまな料金プランが登場しています。しかし、「どの会社を選べばいいかわからない」「比較するのが面倒」という方も多いのではないでしょうか。
+                            </p>
+                            <p class="service-detail__text">
+                                私たちは、お客様の電気使用量やライフスタイルを丁寧にヒアリングし、最適な電力会社・プランをご提案します。
+                            </p>
+                            <div class="service-detail__features">
+                                <h4 class="service-detail__features-title">サービスの特徴</h4>
+                                <ul class="service-detail__features-list">
+                                    <li>電気代の無料診断</li>
+                                    <li>複数の電力会社から最適プランを比較・提案</li>
+                                    <li>切り替え手続きの代行サポート</li>
+                                    <li>アフターフォローも充実</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__merit">
+                                <h4 class="service-detail__merit-title">こんな方におすすめ</h4>
+                                <ul class="service-detail__merit-list">
+                                    <li>電気代を少しでも安くしたい方</li>
+                                    <li>電力会社の切り替えを検討している方</li>
+                                    <li>どの電力会社を選べばいいかわからない方</li>
+                                    <li>一人暮らし〜ファミリーまで幅広く対応</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ガス料金削減 -->
+        <section class="section section--white" id="gas">
+            <div class="container">
+                <div class="service-detail animate-on-scroll">
+                    <div class="service-detail__header">
+                        <div class="service-detail__icon">
+                            <svg viewBox="0 0 64 64" width="80" height="80">
+                                <path d="M32 56c-14 0-22-10-22-22V16h44v18c0 12-8 22-22 22z" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M22 6h20M32 6v10" stroke="#F07F2C" stroke-width="2" stroke-linecap="round"/>
+                                <circle cx="32" cy="38" r="8" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M32 30v-4M32 46v4M24 38h-4M40 38h4" stroke="#F07F2C" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="service-detail__title-area">
+                            <span class="service-detail__number">02</span>
+                            <h2 class="service-detail__title">ガス料金削減</h2>
+                            <p class="service-detail__subtitle">Gas Cost Reduction</p>
+                        </div>
+                    </div>
+                    <div class="service-detail__content service-detail__content--reverse">
+                        <div class="service-detail__image">
+                            <img src="assets/gas-image.png" alt="ガス料金削減イメージ" loading="lazy">
+                        </div>
+                        <div class="service-detail__info">
+                            <h3 class="service-detail__heading">ガス会社の切り替えで光熱費を削減</h3>
+                            <p class="service-detail__text">
+                                2017年のガス自由化により、都市ガスも電気と同様に会社を選べるようになりました。プロパンガスをお使いの方も、会社を変更することで大幅なコスト削減が可能です。
+                            </p>
+                            <p class="service-detail__text">
+                                特にプロパンガスは会社によって料金差が大きく、見直しの効果が出やすい分野です。私たちが適正価格のガス会社をご紹介します。
+                            </p>
+                            <div class="service-detail__features">
+                                <h4 class="service-detail__features-title">サービスの特徴</h4>
+                                <ul class="service-detail__features-list">
+                                    <li>都市ガス・プロパンガス両方に対応</li>
+                                    <li>現在の料金を無料診断</li>
+                                    <li>適正価格のガス会社をご紹介</li>
+                                    <li>切り替え手続きをサポート</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__merit">
+                                <h4 class="service-detail__merit-title">こんな方におすすめ</h4>
+                                <ul class="service-detail__merit-list">
+                                    <li>ガス代が高いと感じている方</li>
+                                    <li>プロパンガスをご利用の方</li>
+                                    <li>電気とガスをセットでお得にしたい方</li>
+                                    <li>引っ越しを機に見直したい方</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 通信コスト削減 -->
+        <section class="section section--gray" id="telecom">
+            <div class="container">
+                <div class="service-detail animate-on-scroll">
+                    <div class="service-detail__header">
+                        <div class="service-detail__icon">
+                            <svg viewBox="0 0 64 64" width="80" height="80">
+                                <rect x="18" y="6" width="28" height="52" rx="4" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <rect x="22" y="12" width="20" height="32" fill="none" stroke="#F07F2C" stroke-width="1"/>
+                                <circle cx="32" cy="52" r="3" fill="none" stroke="#F07F2C" stroke-width="2"/>
+                                <path d="M50 18h6M50 26h10M50 34h6" stroke="#F07F2C" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 20c0-4 4-8 8-8M8 20c0 4 4 8 8 8" stroke="#F07F2C" stroke-width="2" fill="none" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <div class="service-detail__title-area">
+                            <span class="service-detail__number">03</span>
+                            <h2 class="service-detail__title">通信コスト削減</h2>
+                            <p class="service-detail__subtitle">Telecom Cost Reduction</p>
+                        </div>
+                    </div>
+                    <div class="service-detail__content">
+                        <div class="service-detail__image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="通信コスト削減イメージ" loading="lazy">
+                        </div>
+                        <div class="service-detail__info">
+                            <h3 class="service-detail__heading">スマホ・ネット回線の見直しでお得に</h3>
+                            <p class="service-detail__text">
+                                スマートフォンやインターネット回線の料金は、プランの見直しや会社の切り替えで大幅に削減できる可能性があります。「今のプランが自分に合っているかわからない」という方も多いのではないでしょうか。
+                            </p>
+                            <p class="service-detail__text">
+                                私たちは、お客様の利用状況を確認し、最適な通信プランをご提案。格安SIMや光回線のお得な組み合わせもご紹介します。
+                            </p>
+                            <div class="service-detail__features">
+                                <h4 class="service-detail__features-title">サービスの特徴</h4>
+                                <ul class="service-detail__features-list">
+                                    <li>スマホ・タブレット・固定回線に対応</li>
+                                    <li>利用状況に合わせた最適プランをご提案</li>
+                                    <li>格安SIMへの乗り換えサポート</li>
+                                    <li>光回線のお得なプランをご紹介</li>
+                                </ul>
+                            </div>
+                            <div class="service-detail__merit">
+                                <h4 class="service-detail__merit-title">こんな方におすすめ</h4>
+                                <ul class="service-detail__merit-list">
+                                    <li>毎月の通信費を抑えたい方</li>
+                                    <li>大手キャリアから格安SIMへ乗り換えたい方</li>
+                                    <li>自宅のネット回線を見直したい方</li>
+                                    <li>スマホとネットをセットでお得にしたい方</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ご利用の流れ -->
+        <section class="section section--white">
+            <div class="container">
+                <div class="content-block animate-on-scroll">
+                    <div class="content-block__header content-block__header--center">
+                        <span class="content-block__label">Flow</span>
+                        <h2 class="section__title">ご利用の流れ</h2>
+                    </div>
+                    <div class="flow-steps">
+                        <div class="flow-step">
+                            <div class="flow-step__number">1</div>
+                            <div class="flow-step__content">
+                                <h3 class="flow-step__title">お問い合わせ</h3>
+                                <p class="flow-step__text">お電話またはメールでお気軽にご連絡ください。</p>
+                            </div>
+                        </div>
+                        <div class="flow-step__arrow">▼</div>
+                        <div class="flow-step">
+                            <div class="flow-step__number">2</div>
+                            <div class="flow-step__content">
+                                <h3 class="flow-step__title">ヒアリング・診断</h3>
+                                <p class="flow-step__text">現在のご利用状況をお聞きし、無料で診断いたします。</p>
+                            </div>
+                        </div>
+                        <div class="flow-step__arrow">▼</div>
+                        <div class="flow-step">
+                            <div class="flow-step__number">3</div>
+                            <div class="flow-step__content">
+                                <h3 class="flow-step__title">プランのご提案</h3>
+                                <p class="flow-step__text">お客様に最適なプランを比較・ご提案します。</p>
+                            </div>
+                        </div>
+                        <div class="flow-step__arrow">▼</div>
+                        <div class="flow-step">
+                            <div class="flow-step__number">4</div>
+                            <div class="flow-step__content">
+                                <h3 class="flow-step__title">切り替え手続き</h3>
+                                <p class="flow-step__text">面倒な手続きもすべてサポートいたします。</p>
+                            </div>
+                        </div>
+                        <div class="flow-step__arrow">▼</div>
+                        <div class="flow-step">
+                            <div class="flow-step__number">5</div>
+                            <div class="flow-step__content">
+                                <h3 class="flow-step__title">コスト削減達成</h3>
+                                <p class="flow-step__text">毎月の固定費が削減されます。アフターフォローも万全です。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="section section--gray">
+            <div class="container">
+                <div class="content-block animate-on-scroll">
+                    <div class="content-block__header content-block__header--center">
+                        <span class="content-block__label">FAQ</span>
+                        <h2 class="section__title">よくある質問</h2>
+                    </div>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3 class="faq-item__question">Q. 相談は無料ですか？</h3>
+                            <p class="faq-item__answer">A. はい、ご相談・診断は完全無料です。お気軽にお問い合わせください。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-item__question">Q. 切り替えに費用はかかりますか？</h3>
+                            <p class="faq-item__answer">A. 基本的に切り替え費用はかかりません。ただし、現在ご契約中のプランによっては解約金が発生する場合がありますので、事前にご確認させていただきます。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-item__question">Q. 切り替えの手続きは面倒ですか？</h3>
+                            <p class="faq-item__answer">A. いいえ、面倒な手続きは私たちがサポートいたします。お客様のご負担は最小限で済むようにいたします。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-item__question">Q. 電気やガスの品質は変わりますか？</h3>
+                            <p class="faq-item__answer">A. いいえ、品質は変わりません。送電線や配管は従来と同じものを使用しますので、供給品質は変わらず安心してご利用いただけます。</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-item__question">Q. 賃貸住宅でも切り替えできますか？</h3>
+                            <p class="faq-item__answer">A. 電気や都市ガスは基本的に賃貸でも切り替え可能です。プロパンガスは大家さんの許可が必要な場合がありますので、ご相談ください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section--orange cta-section">
+            <div class="container">
+                <div class="cta-block animate-on-scroll">
+                    <h2 class="cta-block__title">まずは無料診断から</h2>
+                    <p class="cta-block__text">今の料金が適正かどうか、無料で診断いたします。お気軽にご相談ください。</p>
+                    <div class="cta-block__buttons">
+                        <a href="contact.html" class="btn btn--white">
+                            お問い合わせ<span class="btn__arrow">▶</span>
+                        </a>
+                        <a href="tel:070-9047-1520" class="btn btn--white-outline">
+                            <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>070-9047-1520
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="services.html">事業内容</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+            <div class="footer__main">
+                <div class="footer__company">
+                    <div class="footer__logo">
+                        <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                            <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                            <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                        </svg>
+                        <span class="footer__logo-text">KAO LINK</span>
+                    </div>
+                    <address class="footer__address">
+                        株式会社KAO LINK<br>
+                        〒571-0046 大阪府門真市松生町1-16-211<br>
+                        TEL: 070-9047-1520<br>
+                        Email: kaolink.ltd@gmail.com
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 株式会社KAO LINK All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 4l-8 8h5v8h6v-8h5z" fill="white"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

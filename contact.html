@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ | 株式会社KAO LINK</title>
+    <meta name="description" content="株式会社KAO LINKへのお問い合わせはこちらから。電気・ガス・通信のコスト削減について、無料でご相談を承っております。">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <div class="header__logos">
+                <a href="index.html" class="header__logo header__logo--main">
+                    <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                        <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                        <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                    </svg>
+                    <span class="logo-text">KAO LINK</span>
+                </a>
+            </div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">会社案内</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <a href="services.html" class="header__nav-link">事業内容</a>
+                        <ul class="header__dropdown">
+                            <li><a href="services.html#electric">電気料金削減</a></li>
+                            <li><a href="services.html#gas">ガス料金削減</a></li>
+                            <li><a href="services.html#telecom">通信コスト削減</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link">ニュース</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="header__cta btn btn--primary">
+                お問い合わせ<span class="btn__arrow">▶</span>
+            </a>
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="about.html" class="mobile-menu__link">会社案内</a></li>
+                <li><a href="services.html" class="mobile-menu__link">事業内容</a></li>
+                <li><a href="news.html" class="mobile-menu__link">ニュース</a></li>
+                <li><a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="page-header__bg">
+                <div class="page-header__grid"></div>
+                <div class="page-header__floating-shapes">
+                    <div class="page-header__shape page-header__shape--1"></div>
+                    <div class="page-header__shape page-header__shape--2"></div>
+                    <div class="page-header__shape page-header__shape--3"></div>
+                    <div class="page-header__shape page-header__shape--4"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="page-header__content">
+                    <p class="page-header__subtitle">Contact</p>
+                    <h1 class="page-header__title">お問い合わせ</h1>
+                    <div class="page-header__line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb__list">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>お問い合わせ</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- お問い合わせ導入 -->
+        <section class="section section--white">
+            <div class="container">
+                <div class="contact-intro animate-on-scroll">
+                    <p class="contact-intro__text">
+                        電気・ガス・通信のコスト削減について、お気軽にご相談ください。<br>
+                        ご相談・診断は完全無料です。下記フォームまたはお電話・メールにてお問い合わせください。
+                    </p>
+                    <div class="contact-intro__methods">
+                        <div class="contact-method">
+                            <div class="contact-method__icon"><svg viewBox="0 0 24 24" width="32" height="32"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="#F07F2C" stroke-width="2"/></svg></div>
+                            <h3 class="contact-method__title">お電話でのお問い合わせ</h3>
+                            <a href="tel:070-9047-1520" class="contact-method__value">070-9047-1520</a>
+                            <p class="contact-method__note">受付時間：9:00〜18:00（土日祝除く）</p>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-method__icon"><svg viewBox="0 0 24 24" width="32" height="32"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="#F07F2C" stroke-width="2"/><path d="M22 6l-10 7L2 6" fill="none" stroke="#F07F2C" stroke-width="2"/></svg></div>
+                            <h3 class="contact-method__title">メールでのお問い合わせ</h3>
+                            <a href="mailto:kaolink.ltd@gmail.com" class="contact-method__value">kaolink.ltd@gmail.com</a>
+                            <p class="contact-method__note">24時間受付</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section class="section section--gray">
+            <div class="container">
+                <div class="content-block animate-on-scroll">
+                    <div class="content-block__header content-block__header--center">
+                        <span class="content-block__label">Form</span>
+                        <h2 class="section__title">お問い合わせフォーム</h2>
+                    </div>
+                    <form class="contact-form" action="#" method="post">
+                        <div class="contact-form__row">
+                            <div class="contact-form__field">
+                                <label class="contact-form__label" for="name">
+                                    お名前<span class="contact-form__required">必須</span>
+                                </label>
+                                <input type="text" id="name" name="name" class="contact-form__input" required placeholder="山田 太郎">
+                            </div>
+                            <div class="contact-form__field">
+                                <label class="contact-form__label" for="kana">
+                                    フリガナ<span class="contact-form__required">必須</span>
+                                </label>
+                                <input type="text" id="kana" name="kana" class="contact-form__input" required placeholder="ヤマダ タロウ">
+                            </div>
+                        </div>
+
+                        <div class="contact-form__row">
+                            <div class="contact-form__field">
+                                <label class="contact-form__label" for="email">
+                                    メールアドレス<span class="contact-form__required">必須</span>
+                                </label>
+                                <input type="email" id="email" name="email" class="contact-form__input" required placeholder="example@email.com">
+                            </div>
+                            <div class="contact-form__field">
+                                <label class="contact-form__label" for="phone">
+                                    電話番号
+                                </label>
+                                <input type="tel" id="phone" name="phone" class="contact-form__input" placeholder="090-1234-5678">
+                            </div>
+                        </div>
+
+                        <div class="contact-form__field contact-form__field--full">
+                            <label class="contact-form__label" for="address">
+                                ご住所
+                            </label>
+                            <input type="text" id="address" name="address" class="contact-form__input" placeholder="大阪府門真市松生町1-16-211">
+                        </div>
+
+                        <div class="contact-form__field contact-form__field--full">
+                            <label class="contact-form__label">
+                                ご相談内容<span class="contact-form__required">必須</span>
+                            </label>
+                            <div class="contact-form__checkboxes">
+                                <label class="contact-form__checkbox">
+                                    <input type="checkbox" name="service[]" value="electric">
+                                    <span>電気料金の削減</span>
+                                </label>
+                                <label class="contact-form__checkbox">
+                                    <input type="checkbox" name="service[]" value="gas">
+                                    <span>ガス料金の削減</span>
+                                </label>
+                                <label class="contact-form__checkbox">
+                                    <input type="checkbox" name="service[]" value="telecom">
+                                    <span>通信コストの削減</span>
+                                </label>
+                                <label class="contact-form__checkbox">
+                                    <input type="checkbox" name="service[]" value="other">
+                                    <span>その他</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="contact-form__field contact-form__field--full">
+                            <label class="contact-form__label" for="message">
+                                お問い合わせ内容<span class="contact-form__required">必須</span>
+                            </label>
+                            <textarea id="message" name="message" class="contact-form__textarea" required rows="6" placeholder="お問い合わせ内容をご記入ください"></textarea>
+                        </div>
+
+                        <div class="contact-form__privacy">
+                            <label class="contact-form__checkbox">
+                                <input type="checkbox" name="privacy" required>
+                                <span><a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する</span>
+                            </label>
+                        </div>
+
+                        <div class="contact-form__submit">
+                            <button type="submit" class="btn btn--primary btn--large">
+                                送信する<span class="btn__arrow">▶</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 会社情報 -->
+        <section class="section section--white">
+            <div class="container">
+                <div class="content-block animate-on-scroll">
+                    <div class="content-block__header content-block__header--center">
+                        <span class="content-block__label">Company</span>
+                        <h2 class="section__title">会社情報</h2>
+                    </div>
+                    <div class="access-block">
+                        <div class="access-block__map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8997697614384!2d135.58547731524!3d34.73847298042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e4c5a5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2z5aSn6Ziq5bqc6ZaA55yf5biC5p2-55Sf55S6MS0xNi0yMTE!5e0!3m2!1sja!2sjp!4v1600000000000!5m2!1sja!2sjp"
+                                width="100%"
+                                height="350"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="access-block__info">
+                            <h3 class="access-block__title">株式会社KAO LINK</h3>
+                            <p class="access-block__address">
+                                〒571-0046<br>
+                                大阪府門真市松生町1-16-211
+                            </p>
+                            <dl class="access-block__contact">
+                                <dt>電話番号</dt>
+                                <dd><a href="tel:070-9047-1520">070-9047-1520</a></dd>
+                                <dt>メール</dt>
+                                <dd><a href="mailto:kaolink.ltd@gmail.com">kaolink.ltd@gmail.com</a></dd>
+                                <dt>営業時間</dt>
+                                <dd>9:00〜18:00（土日祝除く）</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="services.html">事業内容</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+            <div class="footer__main">
+                <div class="footer__company">
+                    <div class="footer__logo">
+                        <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                            <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                            <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                        </svg>
+                        <span class="footer__logo-text">KAO LINK</span>
+                    </div>
+                    <address class="footer__address">
+                        株式会社KAO LINK<br>
+                        〒571-0046 大阪府門真市松生町1-16-211<br>
+                        TEL: 070-9047-1520<br>
+                        Email: kaolink.ltd@gmail.com
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 株式会社KAO LINK All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 4l-8 8h5v8h6v-8h5z" fill="white"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

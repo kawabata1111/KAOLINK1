@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ニュース | 株式会社KAO LINK</title>
+    <meta name="description" content="株式会社KAO LINKの最新ニュース、お知らせ、プレスリリースをご紹介します。">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <div class="header__logos">
+                <a href="index.html" class="header__logo header__logo--main">
+                    <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                        <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                        <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                    </svg>
+                    <span class="logo-text">KAO LINK</span>
+                </a>
+            </div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-link">会社案内</a>
+                    </li>
+                    <li class="header__nav-item header__nav-item--dropdown">
+                        <a href="services.html" class="header__nav-link">事業内容</a>
+                        <ul class="header__dropdown">
+                            <li><a href="services.html#electric">電気料金削減</a></li>
+                            <li><a href="services.html#gas">ガス料金削減</a></li>
+                            <li><a href="services.html#telecom">通信コスト削減</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="news.html" class="header__nav-link header__nav-link--active">ニュース</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="contact.html" class="header__cta btn btn--primary">
+                お問い合わせ<span class="btn__arrow">▶</span>
+            </a>
+            <button class="header__hamburger" id="hamburger" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- モバイルメニュー -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+                <li><a href="about.html" class="mobile-menu__link">会社案内</a></li>
+                <li><a href="services.html" class="mobile-menu__link">事業内容</a></li>
+                <li><a href="news.html" class="mobile-menu__link">ニュース</a></li>
+                <li><a href="contact.html" class="mobile-menu__link mobile-menu__link--cta">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="page-header__bg">
+                <div class="page-header__grid"></div>
+                <div class="page-header__floating-shapes">
+                    <div class="page-header__shape page-header__shape--1"></div>
+                    <div class="page-header__shape page-header__shape--2"></div>
+                    <div class="page-header__shape page-header__shape--3"></div>
+                    <div class="page-header__shape page-header__shape--4"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="page-header__content">
+                    <p class="page-header__subtitle">News</p>
+                    <h1 class="page-header__title">ニュース</h1>
+                    <div class="page-header__line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- パンくずリスト -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb__list">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li>ニュース</li>
+                </ol>
+            </div>
+        </nav>
+
+        <!-- ニュース一覧 -->
+        <section class="section section--white">
+            <div class="container">
+                <div class="news-page animate-on-scroll">
+                    <!-- カテゴリフィルター -->
+                    <div class="news-filter">
+                        <button class="news-filter__btn news-filter__btn--active" data-category="all">すべて</button>
+                        <button class="news-filter__btn" data-category="news">お知らせ</button>
+                        <button class="news-filter__btn" data-category="service">サービス</button>
+                        <button class="news-filter__btn" data-category="press">プレスリリース</button>
+                    </div>
+
+                    <!-- ニュースリスト -->
+                    <div class="news-list">
+                        <article class="news-card" data-category="news">
+                            <time class="news-card__date" datetime="2025-10-15">2025.10.15</time>
+                            <span class="news-card__category news-card__category--news">お知らせ</span>
+                            <h2 class="news-card__title">
+                                <a href="#">ホームページを公開しました</a>
+                            </h2>
+                            <p class="news-card__excerpt">
+                                株式会社KAO LINKの公式ホームページを公開いたしました。当社のサービス内容や会社情報をご覧いただけます。今後とも株式会社KAO LINKをよろしくお願いいたします。
+                            </p>
+                        </article>
+
+                        <article class="news-card" data-category="service">
+                            <time class="news-card__date" datetime="2025-10-01">2025.10.01</time>
+                            <span class="news-card__category news-card__category--service">サービス</span>
+                            <h2 class="news-card__title">
+                                <a href="#">ライフラインコスト削減サービスの提供を開始しました</a>
+                            </h2>
+                            <p class="news-card__excerpt">
+                                電気・ガス・通信のコスト削減サービスの提供を開始いたしました。お客様の毎月の固定費を見直し、最適なプランをご提案いたします。無料診断も行っておりますので、お気軽にご相談ください。
+                            </p>
+                        </article>
+
+                        <article class="news-card" data-category="news">
+                            <time class="news-card__date" datetime="2025-09-24">2025.09.24</time>
+                            <span class="news-card__category news-card__category--news">お知らせ</span>
+                            <h2 class="news-card__title">
+                                <a href="#">株式会社KAO LINKを設立いたしました</a>
+                            </h2>
+                            <p class="news-card__excerpt">
+                                2025年9月24日、株式会社KAO LINKを設立いたしました。「つながり」で暮らしを豊かにという理念のもと、電気・ガス・通信のライフラインコスト削減を通じて、お客様の暮らしと未来をつなぎます。
+                            </p>
+                        </article>
+                    </div>
+
+                    <!-- ページネーション（将来用） -->
+                    <nav class="pagination">
+                        <span class="pagination__current">1</span>
+                        <!-- <a href="#" class="pagination__link">2</a> -->
+                        <!-- <a href="#" class="pagination__link">3</a> -->
+                        <!-- <a href="#" class="pagination__next">次へ ▶</a> -->
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="section section--orange cta-section">
+            <div class="container">
+                <div class="cta-block animate-on-scroll">
+                    <h2 class="cta-block__title">お気軽にご相談ください</h2>
+                    <p class="cta-block__text">電気・ガス・通信のコスト削減について、無料でご相談を承っております。</p>
+                    <div class="cta-block__buttons">
+                        <a href="contact.html" class="btn btn--white">
+                            お問い合わせ<span class="btn__arrow">▶</span>
+                        </a>
+                        <a href="tel:070-9047-1520" class="btn btn--white-outline">
+                            <svg class="btn__icon" viewBox="0 0 24 24" width="18" height="18"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" fill="none" stroke="currentColor" stroke-width="2"/></svg>070-9047-1520
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li><a href="about.html">会社案内</a></li>
+                    <li><a href="services.html">事業内容</a></li>
+                    <li><a href="news.html">ニュース</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="privacy.html">プライバシーポリシー</a></li>
+                </ul>
+            </nav>
+            <div class="footer__main">
+                <div class="footer__company">
+                    <div class="footer__logo">
+                        <svg class="logo-symbol" viewBox="0 0 60 30" width="50" height="25">
+                            <path d="M15 15C15 20.5 11 25 6 25C2.5 25 0 22 0 18C0 13.5 4 9 9 9C12.5 9 15 12 15 15ZM15 15C15 9.5 19 5 24 5C27.5 5 30 8 30 12C30 16.5 26 21 21 21C17.5 21 15 18 15 15Z" fill="#F07F2C"/>
+                            <path d="M45 15C45 20.5 41 25 36 25C32.5 25 30 22 30 18C30 13.5 34 9 39 9C42.5 9 45 12 45 15ZM45 15C45 9.5 49 5 54 5C57.5 5 60 8 60 12C60 16.5 56 21 51 21C47.5 21 45 18 45 15Z" fill="#F07F2C"/>
+                        </svg>
+                        <span class="footer__logo-text">KAO LINK</span>
+                    </div>
+                    <address class="footer__address">
+                        株式会社KAO LINK<br>
+                        〒571-0046 大阪府門真市松生町1-16-211<br>
+                        TEL: 070-9047-1520<br>
+                        Email: kaolink.ltd@gmail.com
+                    </address>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 株式会社KAO LINK All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップへ戻るボタン -->
+    <button class="back-to-top" id="backToTop" aria-label="ページトップへ戻る">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 4l-8 8h5v8h6v-8h5z" fill="white"/>
+        </svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
