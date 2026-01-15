@@ -189,17 +189,17 @@
             animation: pulseAnim 15s infinite ease-in-out;
         }
 
-        /* 会社概要用：力強いビル群（スカイライン）のイラスト */
+        /* 会社概要用：縦長セクションに最適化したビル群と光の粒子 */
         .section-silhouette--company {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" preserveAspectRatio="xMidYMax slice"><path d="M0 800 L0 600 L50 600 L50 500 L120 500 L120 650 L180 650 L180 400 L250 400 L250 700 L320 700 L320 300 L420 300 L420 600 L500 600 L500 450 L580 450 L580 750 L650 750 L650 350 L750 350 L750 600 L820 600 L820 500 L900 500 L900 700 L1000 700 L1000 800 Z" fill="%23F07F2C" opacity="0.3"/><path d="M0 800 L0 700 L80 700 L80 600 L150 600 L150 750 L220 750 L220 550 L300 550 L300 780 L380 780 L380 450 L480 450 L480 700 L550 700 L550 550 L630 550 L630 800 Z" fill="%23F9A825" opacity="0.4"/><rect x="330" y="320" width="10" height="10" fill="white" opacity="0.5"/><rect x="350" y="320" width="10" height="10" fill="white" opacity="0.5"/><rect x="330" y="340" width="10" height="10" fill="white" opacity="0.5"/><rect x="660" y="370" width="15" height="15" fill="white" opacity="0.4"/><rect x="685" y="370" width="15" height="15" fill="white" opacity="0.4"/></svg>') no-repeat center bottom;
-            background-size: 100% auto;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" preserveAspectRatio="xMidYMax slice"><defs><linearGradient id="skyGrad" x1="0" y2="1"><stop offset="0" stop-color="%23F07F2C" stop-opacity="0"/><stop offset="1" stop-color="%23F07F2C" stop-opacity="0.2"/></linearGradient></defs><rect width="1000" height="1200" fill="url(%23skyGrad)"/><g opacity="0.4"><circle cx="200" cy="200" r="2" fill="%23F07F2C"/><circle cx="500" cy="400" r="3" fill="%23F07F2C"/><circle cx="800" cy="150" r="2" fill="%23F07F2C"/><circle cx="300" cy="600" r="4" fill="%23F07F2C"/><circle cx="700" cy="500" r="2" fill="%23F07F2C"/></g><path d="M0 1200 L0 1000 L50 1000 L50 900 L120 1000 L120 1050 L180 1050 L180 800 L250 800 L250 1100 L320 1100 L320 700 L420 700 L420 1000 L500 1000 L500 850 L580 850 L580 1150 L650 1150 L650 750 L750 750 L750 1000 L820 1000 L820 900 L900 900 L900 1100 L1000 1100 L1000 1200 Z" fill="%23F07F2C" opacity="0.3"/><path d="M0 1200 L0 1100 L80 1100 L80 1000 L150 1000 L150 1150 L220 1150 L220 950 L300 950 L300 1180 L380 1180 L380 850 L480 850 L480 1100 L550 1100 L550 950 L630 950 L630 1200 Z" fill="%23F9A825" opacity="0.4"/></svg>') no-repeat center bottom;
+            background-size: 100% 100%; /* セクション全体に引き伸ばす */
             width: 100%;
-            height: 800px; /* 巨大なビル群 */
-            top: auto;
+            height: 100%; /* セクションの高さ100%をカバー */
+            top: 0;
             bottom: 0;
-            opacity: 0.25; /* しっかり見える濃さ */
+            opacity: 0.3;
             filter: none;
-            animation: floatAnim 15s infinite ease-in-out;
+            animation: none; /* 配置を安定させるため一旦停止 */
         }
 
         /* アクセス用：超巨大コンパス＆レーダー */
