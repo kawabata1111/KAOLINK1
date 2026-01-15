@@ -509,3 +509,130 @@
         opacity: 0.8;
     }
 }
+
+/* =========================================
+   News Page Redesign (Grid & Rich Cards)
+   ========================================= */
+
+/* ニュースリストをグリッド化 */
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* PCは3列 */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* ニュースカードのデザイン強化 */
+.news-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.02);
+    border-left: none; /* 既存の左線を消す */
+    border-top: 4px solid var(--color-primary); /* 上線に変更 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 50px rgba(240, 127, 44, 0.15);
+}
+
+/* 日付とカテゴリの配置 */
+.news-card__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.news-card__date {
+    font-family: var(--font-english);
+    font-size: 14px;
+    color: #999;
+    font-weight: 500;
+}
+
+/* カテゴリラベル */
+.news-card__category {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    margin: 0;
+}
+
+.news-card__category--news {
+    background: #FFF3E0;
+    color: var(--color-primary);
+}
+
+.news-card__category--service {
+    background: #E3F2FD;
+    color: #1976D2;
+}
+
+/* タイトル */
+.news-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0 0 15px;
+    flex-grow: 0;
+}
+
+.news-card__title a {
+    color: var(--color-dark-gray);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.news-card__title a:hover {
+    color: var(--color-primary);
+}
+
+/* 本文（抜粋） */
+.news-card__excerpt {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    flex-grow: 1; /* 高さを揃えるため */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* 3行で省略 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* "続きを読む"リンク（擬似的に追加） */
+.news-card::after {
+    content: 'READ MORE →';
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-family: var(--font-english);
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+}
+
+.news-card:hover::after {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* スマホ対応（News追加分） */
+@media (max-width: 991px) {
+    .news-list {
+        grid-template-columns: 1fr; /* スマホは1列 */
+        gap: 20px;
+    }
+
+    .news-card {
+        padding: 25px;
+    }
+}
