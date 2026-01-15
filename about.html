@@ -155,43 +155,42 @@
             box-shadow: none !important;
         }
 
-        /* 街並みシルエット装飾の共通化 -> セクション固有のイラストへ */
+        /* 街並みシルエット装飾の共通化 -> 巨大なセクション固有のイラストへ */
         .section-silhouette {
             position: absolute;
             bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
-            height: 250px; /* 少し高く */
-            opacity: 0.12; /* 少し濃く */
+            height: 600px; /* 大幅に巨大化 */
+            opacity: 0.15; /* より目立たせる */
             pointer-events: none;
-            z-index: 1; /* コンテンツより背後、セクション背景より前面 */
-        }
-
-        .philosophy, #company-info, #access {
-            position: relative;
             z-index: 1;
         }
 
-        .container {
-            position: relative;
-            z-index: 2; /* テキストを最前面に */
-        }
-
-        /* 企業理念用：ネットワーク・つながり */
+        /* 企業理念用：ダイナミックなネットワーク */
         .section-silhouette--philosophy {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200"><circle cx="400" cy="180" r="100" fill="none" stroke="%23F07F2C" stroke-width="1"/><circle cx="400" cy="180" r="60" fill="none" stroke="%23F07F2C" stroke-width="1"/><path d="M300 180 L500 180 M400 80 L400 280" stroke="%23F07F2C" stroke-width="1"/><circle cx="300" cy="180" r="5" fill="%23F07F2C"/><circle cx="500" cy="180" r="5" fill="%23F07F2C"/><circle cx="400" cy="80" r="5" fill="%23F07F2C"/><path d="M330 110 L470 250 M330 250 L470 110" stroke="%23F07F2C" stroke-width="0.5" stroke-dasharray="5,5"/></svg>') no-repeat center bottom;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><circle cx="500" cy="300" r="250" fill="none" stroke="%23F07F2C" stroke-width="0.5" stroke-dasharray="10,10"/><circle cx="500" cy="300" r="150" fill="none" stroke="%23F07F2C" stroke-width="1"/><path d="M200 300 L800 300 M500 0 L500 600" stroke="%23F07F2C" stroke-width="0.5" opacity="0.3"/><circle cx="200" cy="300" r="10" fill="%23F07F2C"/><circle cx="800" cy="300" r="10" fill="%23F07F2C"/><circle cx="500" cy="50" r="10" fill="%23F07F2C"/><circle cx="500" cy="550" r="10" fill="%23F07F2C"/></svg>') no-repeat center center;
             background-size: contain;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        /* 会社概要用：成長・インフィニティ */
+        /* 会社概要用：巨大な上昇ウェーブとインフィニティ */
         .section-silhouette--company {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200"><path d="M200 150 Q300 50 400 150 T600 150" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.5"/><path d="M200 150 Q300 250 400 150 T600 150" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.5"/><rect x="250" y="120" width="20" height="60" fill="%23F07F2C" opacity="0.3"/><rect x="300" y="90" width="20" height="90" fill="%23F07F2C" opacity="0.3"/><rect x="350" y="60" width="20" height="120" fill="%23F07F2C" opacity="0.3"/></svg>') no-repeat right bottom;
-            background-size: contain;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><path d="M0 500 C200 500 300 100 500 100 S800 500 1000 500" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.5"/><path d="M0 550 C200 550 300 150 500 150 S800 550 1000 550" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.3"/><path d="M400 300 Q500 150 600 300 T800 300" fill="none" stroke="%23F07F2C" stroke-width="1" stroke-dasharray="5,5"/></svg>') no-repeat center bottom;
+            background-size: cover;
+            width: 120%;
+            height: 100%;
         }
 
-        /* アクセス用：ルート・ナビゲーション */
+        /* アクセス用：巨大なコンパス・ナビゲーション */
         .section-silhouette--access {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200"><path d="M100 180 C200 180 200 50 400 50 S600 180 700 180" fill="none" stroke="%23F07F2C" stroke-width="1" stroke-dasharray="10,10"/><circle cx="700" cy="180" r="10" fill="%23F07F2C"/><path d="M690 150 L700 170 L710 150 Z" fill="%23F07F2C"/></svg>') no-repeat left bottom;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><circle cx="200" cy="300" r="200" fill="none" stroke="%23F07F2C" stroke-width="0.5"/><path d="M200 100 L200 500 M100 300 L300 300" stroke="%23F07F2C" stroke-width="1"/><path d="M200 150 L220 280 L200 300 L180 280 Z" fill="%23F07F2C"/></svg>') no-repeat left center;
             background-size: contain;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -10%;
         }
 
         @media (max-width: 991px) {
