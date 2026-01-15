@@ -71,6 +71,95 @@
         .page-about .philosophy-statement::after {
             display: none; /* 引用符削除 */
         }
+
+        /* 会社概要の洗練 */
+        .page-about .company__table--full {
+            border-collapse: separate;
+            border-spacing: 0 15px; /* 行間に隙間を作る */
+            margin-top: 30px;
+        }
+
+        .page-about .company__table--full th {
+            background: transparent !important;
+            border: none;
+            padding: 10px 20px;
+            color: var(--color-primary);
+            font-size: 14px;
+            width: 180px;
+            vertical-align: middle;
+        }
+
+        .page-about .company__table--full td {
+            background: #fdfdfd;
+            border: 1px solid #f0f0f0;
+            border-radius: 10px;
+            padding: 15px 25px;
+            color: #444;
+            font-size: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .page-about .company-info__list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .page-about .company-info__list li::before {
+            content: '・';
+            color: var(--color-primary);
+            margin-right: 5px;
+        }
+
+        /* アクセスセクションの洗練 */
+        .page-about .access-block {
+            gap: 50px;
+            align-items: stretch;
+        }
+
+        .page-about .access-block__map {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            flex: 1.2;
+        }
+
+        .page-about .access-block__info {
+            background: #fff;
+            border: 1px solid #f0f0f0;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .page-about .access-block__title {
+            font-size: 24px;
+            color: var(--color-primary);
+            margin-bottom: 20px;
+            border-bottom: 2px solid #f9f9f9;
+            padding-bottom: 15px;
+        }
+
+        .page-about .access-block__routes dt {
+            color: var(--color-primary);
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 991px) {
+            .page-about .company__table--full th,
+            .page-about .company__table--full td {
+                display: block;
+                width: 100%;
+            }
+            .page-about .company__table--full th {
+                padding-bottom: 5px;
+                padding-left: 5px;
+            }
+        }
     </style>
 </head>
 <body class="page-about">
