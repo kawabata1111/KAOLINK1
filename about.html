@@ -189,17 +189,17 @@
             animation: pulseAnim 15s infinite ease-in-out;
         }
 
-        /* 会社概要用：建築的グリッドとリズミカルなタイポグラフィ */
+        /* 会社概要用：力強いビル群（スカイライン）のイラスト */
         .section-silhouette--company {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="%23F07F2C" stroke-width="0.5" opacity="0.3"/><circle cx="0" cy="0" r="1" fill="%23F07F2C" opacity="0.5"/></pattern></defs><rect width="1000" height="1500" fill="url(%23grid)"/><text x="500" y="300" font-family="serif" font-size="120" font-weight="900" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.1" text-anchor="middle" transform="rotate(-5, 500, 300)">KAO LINK</text><text x="500" y="750" font-family="serif" font-size="150" font-weight="900" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.05" text-anchor="middle">KAO LINK</text><text x="500" y="1200" font-family="serif" font-size="120" font-weight="900" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.1" text-anchor="middle" transform="rotate(5, 500, 1200)">KAO LINK</text></svg>') repeat-y center top;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" preserveAspectRatio="xMidYMax slice"><path d="M0 800 L0 600 L50 600 L50 500 L120 500 L120 650 L180 650 L180 400 L250 400 L250 700 L320 700 L320 300 L420 300 L420 600 L500 600 L500 450 L580 450 L580 750 L650 750 L650 350 L750 350 L750 600 L820 600 L820 500 L900 500 L900 700 L1000 700 L1000 800 Z" fill="%23F07F2C" opacity="0.3"/><path d="M0 800 L0 700 L80 700 L80 600 L150 600 L150 750 L220 750 L220 550 L300 550 L300 780 L380 780 L380 450 L480 450 L480 700 L550 700 L550 550 L630 550 L630 800 Z" fill="%23F9A825" opacity="0.4"/><rect x="330" y="320" width="10" height="10" fill="white" opacity="0.5"/><rect x="350" y="320" width="10" height="10" fill="white" opacity="0.5"/><rect x="330" y="340" width="10" height="10" fill="white" opacity="0.5"/><rect x="660" y="370" width="15" height="15" fill="white" opacity="0.4"/><rect x="685" y="370" width="15" height="15" fill="white" opacity="0.4"/></svg>') no-repeat center bottom;
             background-size: 100% auto;
             width: 100%;
-            height: 100%;
-            top: 0;
+            height: 800px; /* 巨大なビル群 */
+            top: auto;
             bottom: 0;
-            opacity: 0.4; /* グリッドが見えるように調整 */
-            animation: none; /* 会社概要は安定感のため静止 */
+            opacity: 0.25; /* しっかり見える濃さ */
             filter: none;
+            animation: floatAnim 15s infinite ease-in-out;
         }
 
         /* アクセス用：超巨大コンパス＆レーダー */
