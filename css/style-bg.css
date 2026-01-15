@@ -285,16 +285,6 @@
         font-size: 14px;
         line-height: 1.8;
     }
-
-    /* リストデザイン調整 */
-    .service-detail__features,
-    .service-detail__merit {
-        padding: 20px;
-        margin-top: 20px;
-        border-radius: 10px;
-        background: var(--color-light-gray);
-        border: none;
-    }
     
     /* セクション間の余白 */
     .section {
