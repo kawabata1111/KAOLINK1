@@ -644,16 +644,19 @@
 /* 企業理念セクションのリッチ化 */
 .philosophy {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2000'); /* チームワーク/つながりのイメージ */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* パララックス効果 */
+    /* 抽象的な幾何学模様の背景（CSSグラデーションで作成） */
+    background-color: #222; /* ベースは暗い色 */
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(240, 127, 44, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(3, 169, 244, 0.2) 0%, transparent 50%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent);
+    background-size: 100% 100%, 100% 100%, 40px 40px; /* パターンのサイズ */
     padding: 120px 0;
     color: #fff;
     overflow: hidden;
 }
 
-/* 背景を暗くして文字を見やすくするオーバーレイ */
+/* 背景を暗くして文字を見やすくするオーバーレイ（調整） */
 .philosophy::before {
     content: '';
     position: absolute;
@@ -661,7 +664,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* 黒の半透明 */
+    background: rgba(0, 0, 0, 0.3); /* 少し薄く */
     z-index: 0;
 }
 
