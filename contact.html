@@ -131,7 +131,12 @@
                         <span class="content-block__label">Form</span>
                         <h2 class="section__title">お問い合わせフォーム</h2>
                     </div>
-                    <form class="contact-form" action="#" method="post">
+                    <form class="contact-form" action="https://formsubmit.co/kaolink.ltd@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="【KAO LINK】Webサイトからのお問い合わせ">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://frabjous-custard-3a6e61.netlify.app/contact.html">
+                        
                         <div class="contact-form__row">
                             <div class="contact-form__field">
                                 <label class="contact-form__label" for="name">
