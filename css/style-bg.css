@@ -547,9 +547,36 @@
     }
 
     .contact-method__value {
-        font-size: 20px !important; /* 文字サイズを調整 */
+        font-size: 20px !important;
         display: block !important;
     }
+}
+
+/* =========================================
+   Hero Section Enhancement (index.html)
+   ========================================= */
+.hero__subtitle {
+    font-size: clamp(24px, 5vw, 42px) !important; /* 大幅に巨大化 */
+    font-weight: 900 !important; /* 極太 */
+    letter-spacing: 0.4em !important; /* 文字間隔を広く */
+    text-transform: uppercase !important; /* 全て大文字に */
+    color: var(--color-primary) !important;
+    margin-bottom: 30px !important;
+    display: inline-block !important;
+    line-height: 1.2 !important;
+    opacity: 0.8 !important;
+    position: relative;
+    animation: letterSpread 1.5s ease-out forwards;
+}
+
+@keyframes letterSpread {
+    from { letter-spacing: 0.1em; opacity: 0; transform: translateY(10px); }
+    to { letter-spacing: 0.4em; opacity: 0.8; transform: translateY(0); }
+}
+
+/* タイトルとのバランス調整 */
+.hero__title {
+    margin-top: 20px !important;
 }
 
 /* =========================================
