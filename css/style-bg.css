@@ -540,6 +540,16 @@
         grid-template-columns: 1fr !important;
         gap: 20px !important;
     }
+
+    .contact-method {
+        padding: 25px 15px !important; /* パディングを抑える */
+        word-break: break-word !important; /* はみ出し防止 */
+    }
+
+    .contact-method__value {
+        font-size: 20px !important; /* 文字サイズを調整 */
+        display: block !important;
+    }
 }
 
 /* =========================================
