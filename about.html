@@ -11,6 +11,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-bg.css?v=2">
+    <style>
+        /* 強制適用スタイル */
+        .philosophy {
+            background-color: #222 !important;
+            background-image: 
+                radial-gradient(circle at 20% 20%, rgba(240, 127, 44, 0.4) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(3, 169, 244, 0.2) 0%, transparent 50%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.05) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.05) 50%, rgba(255, 255, 255, 0.05) 75%, transparent 75%, transparent) !important;
+            background-size: 100% 100%, 100% 100%, 40px 40px !important;
+            color: #fff !important;
+            padding: 120px 0 !important;
+        }
+        .philosophy .section__title,
+        .philosophy-statement__text,
+        .philosophy-statement__desc,
+        .content-block__label {
+            color: #fff !important;
+        }
+        .philosophy-statement {
+            background: rgba(255, 255, 255, 0.1) !important;
+            backdrop-filter: blur(10px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.3) !important;
+        }
+    </style>
 </head>
 <body>
     <!-- ヘッダー -->
