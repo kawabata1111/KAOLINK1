@@ -556,14 +556,14 @@
    Hero Section Enhancement (index.html)
    ========================================= */
 .hero__subtitle {
-    font-size: clamp(24px, 5vw, 42px) !important; /* 大幅に巨大化 */
-    font-weight: 900 !important; /* 極太 */
-    letter-spacing: 0.4em !important; /* 文字間隔を広く */
-    text-transform: uppercase !important; /* 全て大文字に */
+    font-size: clamp(32px, 8vw, 64px) !important; /* 2行なのでさらに巨大化 */
+    font-weight: 900 !important;
+    letter-spacing: 0.2em !important; /* 2行なので少し詰めて密度を出す */
+    text-transform: uppercase !important;
     color: var(--color-primary) !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 40px !important;
     display: inline-block !important;
-    line-height: 1.2 !important;
+    line-height: 1.1 !important; /* 行間をタイトに */
     opacity: 0.8 !important;
     position: relative;
     animation: letterSpread 1.5s ease-out forwards;
