@@ -1,6 +1,5 @@
-
 /* =========================================
-   Service Section Specific Backgrounds
+   Service Section Specific Backgrounds & Decorations
    ========================================= */
 
 /* 共通: セクション背景の基本設定 */
@@ -8,6 +7,23 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+}
+
+/* 巨大背景テキスト (Typography Background) */
+.service-bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-english-serif);
+    font-size: clamp(80px, 15vw, 250px);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.03); /* さらに薄く */
+    white-space: nowrap;
+    pointer-events: none;
+    z-index: -2; /* 最背面へ */
+    letter-spacing: 0.05em;
+    user-select: none;
 }
 
 /* --- 電気料金削減 (Electric) --- */
@@ -22,36 +38,30 @@
     right: -5%;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, rgba(255, 215, 0, 0.15) 0%, transparent 70%);
-    filter: blur(40px);
+    background: radial-gradient(circle, rgba(255, 215, 0, 0.2) 0%, transparent 70%);
+    filter: blur(50px);
     z-index: -1;
+    animation: electricGlow 5s ease-in-out infinite alternate;
 }
 
-#electric::after {
-    content: '';
-    position: absolute;
-    bottom: 10%;
-    left: -5%;
-    width: 400px;
-    height: 400px;
-    background: conic-gradient(from 180deg at 50% 50%, rgba(240, 127, 44, 0.1) 0deg, transparent 180deg);
-    border-radius: 50%;
-    filter: blur(60px);
-    z-index: -1;
+@keyframes electricGlow {
+    from { opacity: 0.5; transform: scale(1); }
+    to { opacity: 1; transform: scale(1.1); }
 }
 
-/* 稲妻のようなアクセントライン */
-#electric .container::before {
-    content: '';
+/* 稲妻シェイプ (SVG風) */
+.electric-shape {
     position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 2px;
-    height: 100px;
-    background: linear-gradient(to bottom, transparent, #F07F2C, transparent);
-    transform: rotate(45deg);
-    opacity: 0.3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     pointer-events: none;
+    z-index: -1;
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 800 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M400 0 L450 150 L350 150 L420 300 L320 300 L400 600' stroke='rgba(240, 127, 44, 0.05)' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 80% center;
+    background-size: contain;
 }
 
 /* --- ガス料金削減 (Gas) --- */
@@ -59,16 +69,17 @@
     background: linear-gradient(135deg, #fff 0%, #fff5f0 100%);
 }
 
+/* 炎のゆらぎ */
 #gas::before {
     content: '';
     position: absolute;
-    bottom: -20%;
-    right: -10%;
-    width: 700px;
-    height: 700px;
-    background: radial-gradient(circle, rgba(255, 87, 34, 0.08) 0%, transparent 70%);
+    bottom: -30%;
+    left: -10%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(255, 87, 34, 0.1) 0%, transparent 70%);
     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    animation: gasFloat 10s infinite linear;
+    animation: gasFloat 12s infinite linear;
     z-index: -1;
 }
 
@@ -77,24 +88,12 @@
     100% { transform: rotate(360deg); }
 }
 
-#gas::after {
-    content: '';
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 100px;
-    height: 100px;
-    border: 15px solid rgba(240, 127, 44, 0.05);
-    border-radius: 50%;
-    z-index: -1;
-}
-
 /* --- 通信コスト削減 (Telecom) --- */
 #telecom {
     background: linear-gradient(135deg, #f0f9ff 0%, #e1f5fe 100%);
 }
 
-/* デジタル・ネットワーク風グリッド */
+/* ネットワークグリッド */
 #telecom::before {
     content: '';
     position: absolute;
@@ -105,37 +104,93 @@
     background-image: 
         linear-gradient(rgba(3, 169, 244, 0.05) 1px, transparent 1px),
         linear-gradient(90deg, rgba(3, 169, 244, 0.05) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-size: 60px 60px;
     z-index: -1;
 }
 
-#telecom::after {
+/* 波紋 (Ripple) */
+.telecom-ripple {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid rgba(3, 169, 244, 0.1);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.telecom-ripple::before,
+.telecom-ripple::after {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(circle, transparent 30%, rgba(255, 255, 255, 0.8) 80%);
-    z-index: -1;
+    border-radius: 50%;
+    border: 2px solid rgba(3, 169, 244, 0.1);
+    animation: rippleExpand 4s infinite linear;
 }
 
-/* 電波のような同心円 */
-#telecom .container::after {
+.telecom-ripple::before { width: 60%; height: 60%; animation-delay: 0s; }
+.telecom-ripple::after { width: 140%; height: 140%; animation-delay: 2s; }
+
+@keyframes rippleExpand {
+    0% { width: 0; height: 0; opacity: 1; }
+    100% { width: 200%; height: 200%; opacity: 0; }
+}
+
+/* --- ページヘッダーの強化 (派手に) --- */
+.page-header {
+    background: linear-gradient(120deg, #F07F2C 0%, #FFB74D 100%);
+    overflow: hidden;
+}
+
+/* パーティクル強化 */
+.page-header__floating-shapes .shape {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: floatUp 10s infinite ease-in-out;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
+    20% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+}
+
+/* 見出しの下線強調 */
+.section__title {
+    position: relative;
+    display: inline-block;
+}
+
+.section__title::after {
     content: '';
     position: absolute;
-    top: 10%;
-    right: 5%;
-    width: 200px;
-    height: 200px;
-    border: 2px solid rgba(3, 169, 244, 0.1);
-    border-radius: 50%;
-    animation: rippleWave 3s infinite ease-out;
-    pointer-events: none;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--color-primary);
+    border-radius: 2px;
 }
 
-@keyframes rippleWave {
-    0% { transform: scale(0.5); opacity: 1; }
-    100% { transform: scale(1.5); opacity: 0; }
+.section__title--center::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* スマホ対応 */
+@media (max-width: 768px) {
+    .service-bg-text {
+        font-size: 60px;
+        opacity: 0.1; /* スマホでは少し濃くして見えるように */
+    }
 }
