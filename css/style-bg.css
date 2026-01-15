@@ -636,3 +636,62 @@
         padding: 25px;
     }
 }
+
+/* =========================================
+   About Page - Philosophy Section Redesign
+   ========================================= */
+
+/* 企業理念セクションのリッチ化 */
+.philosophy {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=2000'); /* チームワーク/つながりのイメージ */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* パララックス効果 */
+    padding: 120px 0;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* 背景を暗くして文字を見やすくするオーバーレイ */
+.philosophy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* 黒の半透明 */
+    z-index: 0;
+}
+
+/* コンテンツを前面に出す */
+.philosophy .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* テキストカラーの強制上書き */
+.philosophy .section__title,
+.philosophy-statement__text,
+.philosophy-statement__desc,
+.content-block__label {
+    color: #fff !important;
+}
+
+/* 枠線の色調整 */
+.philosophy-statement {
+    background: rgba(255, 255, 255, 0.1); /* 半透明の白 */
+    backdrop-filter: blur(10px); /* すりガラス効果 */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.philosophy-statement::before,
+.philosophy-statement::after {
+    color: rgba(255, 255, 255, 0.2); /* 引用符も白く薄く */
+}
+
+/* 装飾（シルエット）は画像背景と合わないので非表示に */
+.philosophy__decoration {
+    display: none;
+}
