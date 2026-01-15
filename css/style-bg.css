@@ -511,6 +511,38 @@
 }
 
 /* =========================================
+   Contact Page Responsive Fixes
+   ========================================= */
+@media (max-width: 767px) {
+    .contact-form__row {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .contact-form__field {
+        width: 100% !important;
+    }
+
+    .contact-form__checkboxes {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .contact-form__submit .btn {
+        width: 100% !important;
+        padding: 18px 30px !important;
+    }
+    
+    .contact-intro__methods {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+}
+
+/* =========================================
    News Page Redesign (Grid & Rich Cards)
    ========================================= */
 
