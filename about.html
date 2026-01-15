@@ -149,6 +149,29 @@
             margin-top: 20px;
         }
 
+        /* 街並みシルエット装飾の共通化 */
+        .section-silhouette {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 150px;
+            opacity: 0.08; /* かなり薄くして文字を邪魔しないようにする */
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .section-silhouette--left {
+            left: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><path d="M0 200V100L20 100V60L40 60V80L60 80V40L80 40V100L100 100V70L120 70V100L140 100V50L160 50V80L180 80V60L200 60V100L220 100V30L240 30V70L260 70V100L280 100V80L300 80V60L320 60V100L340 100V40L360 40V80L380 80V100L400 100V200Z" fill="%23F07F2C"/></svg>') no-repeat left bottom;
+            background-size: contain;
+        }
+
+        .section-silhouette--right {
+            right: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200"><path d="M0 200V100L20 100V80L40 80V60L60 60V40L100 40L100 60L120 60V30L140 30V80L160 80V100L180 100V50L200 50V70L220 70V100L240 100V60L260 60V80L280 80V100L300 100V40L320 40V70L340 70V100L360 100V60L380 80V100L400 100V200Z" fill="%23F07F2C"/></svg>') no-repeat right bottom;
+            background-size: contain;
+        }
+
         @media (max-width: 991px) {
             .page-about .company__table--full th,
             .page-about .company__table--full td {
@@ -266,9 +289,10 @@
                     </div>
                 </div>
             </div>
+            <div class="section-silhouette section-silhouette--left"></div>
         </section>
 
-        <!-- 会社概要 -->
+        <!-- 代表挨拶 -->
         <section class="section section--white" id="company-info">
             <div class="container">
                 <div class="content-block animate-on-scroll">
@@ -328,6 +352,7 @@
                     </div>
                 </div>
             </div>
+            <div class="section-silhouette section-silhouette--right"></div>
         </section>
 
         <!-- アクセス -->
@@ -366,6 +391,7 @@
                     </div>
                 </div>
             </div>
+            <div class="section-silhouette section-silhouette--left"></div>
         </section>
 
         <!-- CTA -->
