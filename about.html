@@ -231,18 +231,21 @@
 
             /* アクセスセクションのレスポンシブ対応 */
             .page-about .access-block {
-                flex-direction: column; /* 縦並びに変更 */
-                gap: 30px;
-            }
-
-            .page-about .access-block__map,
-            .page-about .access-block__info {
-                width: 100%;
-                flex: none;
+                display: flex !important;
+                flex-direction: column !important; /* 縦並びに強制 */
+                gap: 30px !important;
             }
 
             .page-about .access-block__map {
-                height: 300px; /* スマホでは高さを抑える */
+                width: 100% !important;
+                height: 300px !important;
+                order: 1 !important; /* マップを上に */
+            }
+
+            .page-about .access-block__info {
+                width: 100% !important;
+                order: 2 !important; /* テキストを下に */
+                padding: 0 !important;
             }
         }
     </style>
