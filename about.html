@@ -228,6 +228,22 @@
                 padding-bottom: 5px;
                 padding-left: 5px;
             }
+
+            /* アクセスセクションのレスポンシブ対応 */
+            .page-about .access-block {
+                flex-direction: column; /* 縦並びに変更 */
+                gap: 30px;
+            }
+
+            .page-about .access-block__map,
+            .page-about .access-block__info {
+                width: 100%;
+                flex: none;
+            }
+
+            .page-about .access-block__map {
+                height: 300px; /* スマホでは高さを抑える */
+            }
         }
     </style>
 </head>
