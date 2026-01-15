@@ -5,6 +5,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all modules
+    initLoader(); // Add this
     initHeader();
     initMobileMenu();
     initScrollAnimations();
@@ -18,6 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
     initCountUp();
     initButtonRipple();
 });
+
+/**
+ * Loading Screen
+ */
+function initLoader() {
+    const loader = document.getElementById('loader');
+    if (!loader) return;
+
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('loader-wrapper--hidden');
+        }, 1000); // 最小1秒は表示させてブランドを印象付ける
+    });
+}
 
 /**
  * Header scroll effect
