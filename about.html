@@ -155,42 +155,64 @@
             box-shadow: none !important;
         }
 
-        /* 街並みシルエット装飾の共通化 -> 巨大なセクション固有のイラストへ */
+        /* 巨大なセクション固有のイラスト：極限リッチ版 */
         .section-silhouette {
             position: absolute;
-            bottom: 0;
             left: 50%;
             transform: translateX(-50%);
             width: 100%;
-            height: 600px; /* 大幅に巨大化 */
-            opacity: 0.15; /* より目立たせる */
+            height: 800px; /* さらに巨大化 */
+            opacity: 0.35; /* 濃くする */
             pointer-events: none;
             z-index: 1;
+            filter: blur(1px); /* 少しだけぼかして奥行きを出す */
         }
 
-        /* 企業理念用：ダイナミックなネットワーク */
+        /* 浮遊アニメーション */
+        @keyframes floatAnim {
+            0%, 100% { transform: translate(-50%, -50%) translateY(0) rotate(0deg); }
+            50% { transform: translate(-50%, -50%) translateY(-30px) rotate(2deg); }
+        }
+
+        /* 波紋アニメーション */
+        @keyframes pulseAnim {
+            0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.2; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.5; }
+            100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.2; }
+        }
+
+        /* 企業理念用：超ダイナミック・ネットワーク */
         .section-silhouette--philosophy {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><circle cx="500" cy="300" r="250" fill="none" stroke="%23F07F2C" stroke-width="0.5" stroke-dasharray="10,10"/><circle cx="500" cy="300" r="150" fill="none" stroke="%23F07F2C" stroke-width="1"/><path d="M200 300 L800 300 M500 0 L500 600" stroke="%23F07F2C" stroke-width="0.5" opacity="0.3"/><circle cx="200" cy="300" r="10" fill="%23F07F2C"/><circle cx="800" cy="300" r="10" fill="%23F07F2C"/><circle cx="500" cy="50" r="10" fill="%23F07F2C"/><circle cx="500" cy="550" r="10" fill="%23F07F2C"/></svg>') no-repeat center center;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="400" fill="none" stroke="%23F07F2C" stroke-width="0.5" stroke-dasharray="20,10"/><circle cx="500" cy="500" r="300" fill="none" stroke="%23F07F2C" stroke-width="1"/><circle cx="500" cy="500" r="200" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.5"/><path d="M500 100 L500 900 M100 500 L900 500" stroke="%23F07F2C" stroke-width="1" opacity="0.3"/><path d="M217 217 L783 783 M217 783 L783 217" stroke="%23F07F2C" stroke-width="0.5" opacity="0.3"/><circle cx="500" cy="100" r="15" fill="%23F07F2C"/><circle cx="500" cy="900" r="15" fill="%23F07F2C"/><circle cx="100" cy="500" r="15" fill="%23F07F2C"/><circle cx="900" cy="500" r="15" fill="%23F07F2C"/><circle cx="500" cy="500" r="40" fill="%23F07F2C" opacity="0.2"/></svg>') no-repeat center center;
             background-size: contain;
             top: 50%;
-            transform: translate(-50%, -50%);
+            animation: pulseAnim 15s infinite ease-in-out;
         }
 
-        /* 会社概要用：巨大な上昇ウェーブとインフィニティ */
+        /* 会社概要用：多層レイヤー・ウェーブ */
         .section-silhouette--company {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><path d="M0 500 C200 500 300 100 500 100 S800 500 1000 500" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.5"/><path d="M0 550 C200 550 300 150 500 150 S800 550 1000 550" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.3"/><path d="M400 300 Q500 150 600 300 T800 300" fill="none" stroke="%23F07F2C" stroke-width="1" stroke-dasharray="5,5"/></svg>') no-repeat center bottom;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800"><path d="M0 400 C150 200 350 600 500 400 S850 200 1000 400 V800 H0 Z" fill="%23F07F2C" opacity="0.1"/><path d="M0 450 C150 250 350 650 500 450 S850 250 1000 450 V800 H0 Z" fill="%23F07F2C" opacity="0.05"/><path d="M0 500 C200 300 400 700 600 500 S1000 300 1200 500" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.2"/><path d="M-200 550 C0 350 200 750 400 550 S800 350 1000 550" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.1"/></svg>') no-repeat center bottom;
             background-size: cover;
-            width: 120%;
+            width: 150%;
             height: 100%;
+            bottom: -100px;
+            animation: floatAnim 20s infinite ease-in-out;
         }
 
-        /* アクセス用：巨大なコンパス・ナビゲーション */
+        /* アクセス用：超巨大コンパス＆レーダー */
         .section-silhouette--access {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><circle cx="200" cy="300" r="200" fill="none" stroke="%23F07F2C" stroke-width="0.5"/><path d="M200 100 L200 500 M100 300 L300 300" stroke="%23F07F2C" stroke-width="1"/><path d="M200 150 L220 280 L200 300 L180 280 Z" fill="%23F07F2C"/></svg>') no-repeat left center;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><circle cx="500" cy="500" r="450" fill="none" stroke="%23F07F2C" stroke-width="0.5" opacity="0.3"/><circle cx="500" cy="500" r="350" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.5"/><path d="M500 50 L500 950 M50 500 L950 500" stroke="%23F07F2C" stroke-width="0.5" opacity="0.2"/><path d="M500 500 L700 200" stroke="%23F07F2C" stroke-width="5" stroke-linecap="round" opacity="0.6"/><circle cx="500" cy="500" r="20" fill="%23F07F2C"/></svg>') no-repeat left center;
             background-size: contain;
             top: 50%;
-            transform: translateY(-50%);
-            left: -10%;
+            left: -20%;
+            width: 1000px;
+            height: 1000px;
+            animation: rotateAnim 60s infinite linear;
+        }
+
+        @keyframes rotateAnim {
+            from { transform: translateY(-50%) rotate(0deg); }
+            to { transform: translateY(-50%) rotate(360deg); }
         }
 
         @media (max-width: 991px) {
