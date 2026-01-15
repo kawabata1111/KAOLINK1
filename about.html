@@ -189,14 +189,17 @@
             animation: pulseAnim 15s infinite ease-in-out;
         }
 
-        /* 会社概要用：多層レイヤー・ウェーブ */
+        /* 会社概要用：建築的グリッドとリズミカルなタイポグラフィ */
         .section-silhouette--company {
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800"><path d="M0 400 C150 200 350 600 500 400 S850 200 1000 400 V800 H0 Z" fill="%23F07F2C" opacity="0.1"/><path d="M0 450 C150 250 350 650 500 450 S850 250 1000 450 V800 H0 Z" fill="%23F07F2C" opacity="0.05"/><path d="M0 500 C200 300 400 700 600 500 S1000 300 1200 500" fill="none" stroke="%23F07F2C" stroke-width="2" opacity="0.2"/><path d="M-200 550 C0 350 200 750 400 550 S800 350 1000 550" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.1"/></svg>') no-repeat center bottom;
-            background-size: cover;
-            width: 150%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1500"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="%23F07F2C" stroke-width="0.5" opacity="0.3"/><circle cx="0" cy="0" r="1" fill="%23F07F2C" opacity="0.5"/></pattern></defs><rect width="1000" height="1500" fill="url(%23grid)"/><text x="500" y="300" font-family="serif" font-size="120" font-weight="900" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.1" text-anchor="middle" transform="rotate(-5, 500, 300)">KAO LINK</text><text x="500" y="750" font-family="serif" font-size="150" font-weight="900" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.05" text-anchor="middle">KAO LINK</text><text x="500" y="1200" font-family="serif" font-size="120" font-weight="900" fill="none" stroke="%23F07F2C" stroke-width="1" opacity="0.1" text-anchor="middle" transform="rotate(5, 500, 1200)">KAO LINK</text></svg>') repeat-y center top;
+            background-size: 100% auto;
+            width: 100%;
             height: 100%;
-            bottom: -100px;
-            animation: floatAnim 20s infinite ease-in-out;
+            top: 0;
+            bottom: 0;
+            opacity: 0.4; /* グリッドが見えるように調整 */
+            animation: none; /* 会社概要は安定感のため静止 */
+            filter: none;
         }
 
         /* アクセス用：超巨大コンパス＆レーダー */
