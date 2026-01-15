@@ -556,17 +556,28 @@
    Hero Section Enhancement (index.html)
    ========================================= */
 .hero__subtitle {
-    font-size: clamp(32px, 8vw, 64px) !important; /* 2行なのでさらに巨大化 */
+    font-size: clamp(24px, 6vw, 48px) !important; /* サイズを少し抑える */
     font-weight: 900 !important;
-    letter-spacing: 0.2em !important; /* 2行なので少し詰めて密度を出す */
+    letter-spacing: 0.25em !important;
     text-transform: uppercase !important;
     color: var(--color-primary) !important;
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
     display: inline-block !important;
-    line-height: 1.1 !important; /* 行間をタイトに */
-    opacity: 0.8 !important;
+    line-height: 1.2 !important;
+    opacity: 1 !important; /* 不透明度を上げる */
     position: relative;
+    /* 文字を浮かび上がらせるシャドウ */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.4);
     animation: letterSpread 1.5s ease-out forwards;
+}
+
+/* ヒーロー背景にうっすらと暗みを加えて文字を際立たせる */
+.hero__bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.1) 100%);
+    z-index: 2;
 }
 
 @keyframes letterSpread {
