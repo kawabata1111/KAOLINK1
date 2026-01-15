@@ -1,3 +1,4 @@
+
 /* =========================================
    Service Section Specific Backgrounds & Decorations
    ========================================= */
@@ -187,10 +188,142 @@
     transform: translateX(-50%);
 }
 
-/* スマホ対応 */
-@media (max-width: 768px) {
+/* =========================================
+   RESPONSIVE OVERHAUL (Mobile First)
+   ========================================= */
+@media (max-width: 991px) {
+    /* コンテナの余白調整 */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* 背景テキストを控えめに */
     .service-bg-text {
-        font-size: 60px;
-        opacity: 0.1; /* スマホでは少し濃くして見えるように */
+        font-size: 50px;
+        opacity: 0.05;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* サービスカードのレイアウト再構築 */
+    .service-detail {
+        display: flex;
+        flex-direction: column;
+        padding: 0; /* 内部の余白は子要素で管理 */
+        border-radius: 20px;
+        overflow: hidden;
+        margin-top: 30px;
+        background: #fff; /* 背景を白に固定 */
+    }
+
+    .service-detail__header {
+        order: 2; /* ヘッダーを画像の次に */
+        padding: 25px 25px 10px;
+        border-bottom: none;
+        margin-bottom: 0;
+        display: block; /* フレックス解除 */
+        text-align: left;
+    }
+
+    /* 画像をカード上部へ */
+    .service-detail__image {
+        order: 1;
+        width: 100%;
+        border-radius: 20px 20px 0 0; /* 上部のみ角丸 */
+        box-shadow: none;
+        transform: none !important; /* 回転エフェクト無効化 */
+        margin: 0;
+    }
+
+    .service-detail__image img {
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* 番号とアイコンの調整 */
+    .service-detail__icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        margin: 0;
+        z-index: 10;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-radius: 12px;
+    }
+
+    .service-detail__icon svg {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .service-detail__icon svg path,
+    .service-detail__icon svg circle,
+    .service-detail__icon svg rect {
+        stroke: var(--color-primary); /* アイコン色を戻す */
+    }
+
+    .service-detail__number {
+        display: none; /* スマホでは巨大数字を隠す */
+    }
+
+    /* コンテンツエリア */
+    .service-detail__content {
+        display: contents; /* グリッド解除 */
+    }
+
+    .service-detail__info {
+        order: 3;
+        padding: 0 25px 30px;
+    }
+
+    .service-detail__title-area {
+        margin-bottom: 15px;
+    }
+
+    .service-detail__title {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .service-detail__subtitle {
+        font-size: 12px;
+        opacity: 0.7;
+    }
+
+    .service-detail__heading {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        background: none;
+        -webkit-text-fill-color: var(--color-primary);
+        color: var(--color-primary);
+    }
+
+    .service-detail__text {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* リストデザイン調整 */
+    .service-detail__features,
+    .service-detail__merit {
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background: var(--color-light-gray);
+        border: none;
+    }
+    
+    /* セクション間の余白 */
+    .section {
+        padding: 60px 0;
     }
 }
