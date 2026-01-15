@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style-bg.css?v=2">
     <style>
         /* 強制適用スタイル：企業理念リデザイン */
-        .philosophy {
+        .page-about .philosophy {
             background-color: #fff !important;
             background-image: none !important; /* グラデーション削除 */
             padding: 100px 0 !important;
@@ -23,13 +23,13 @@
         }
         
         /* コンテナの幅を確保 */
-        .philosophy .container {
+        .page-about .philosophy .container {
             position: relative;
             z-index: 2;
         }
 
         /* 背景の装飾（抽象的な円） */
-        .philosophy::before {
+        .page-about .philosophy::before {
             content: '';
             position: absolute;
             top: -10%;
@@ -41,25 +41,25 @@
         }
 
         /* テキストカラーを黒に戻す */
-        .philosophy .section__title,
-        .content-block__label {
+        .page-about .philosophy .section__title,
+        .page-about .content-block__label {
             color: var(--color-primary) !important;
         }
         
-        .philosophy-statement__text {
+        .page-about .philosophy-statement__text {
             color: var(--color-primary) !important;
             font-family: "Playfair Display", serif; /* 明朝体系 */
             font-size: 32px !important;
             margin-bottom: 30px !important;
         }
 
-        .philosophy-statement__desc {
+        .page-about .philosophy-statement__desc {
             color: #555 !important;
             font-weight: 500;
         }
 
         /* 枠線を消してシンプルに */
-        .philosophy-statement {
+        .page-about .philosophy-statement {
             background: transparent !important;
             backdrop-filter: none !important;
             border: none !important;
@@ -67,13 +67,13 @@
             text-align: center; /* 中央揃え */
         }
 
-        .philosophy-statement::before,
-        .philosophy-statement::after {
+        .page-about .philosophy-statement::before,
+        .page-about .philosophy-statement::after {
             display: none; /* 引用符削除 */
         }
     </style>
 </head>
-<body>
+<body class="page-about">
     <!-- ヘッダー -->
     <header class="header" id="header">
         <div class="header__inner">
